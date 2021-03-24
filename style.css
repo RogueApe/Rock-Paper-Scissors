@@ -1,0 +1,94 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+body {
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/007/382/309/large/nastya-friday-game-background-1.jpg?1505758821);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* game selection goes here! */
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.game_btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    transition: 100ms;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.game_btn:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+/* game scores goes here! */
+
+.game_result {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.scores {
+    font-size: 1.2rem;
+    color: #333;
+    margin-left: 0.5rem;
+}
+
+.result_winner {
+    margin-top: 1rem;
+    opacity: 1;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.result_loser {
+    margin-top: 1rem;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* reset button goes here */
+
+.reset {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.reset_btn {
+    border: 5px solid goldenrod;
+    background-color: blueviolet;
+    border-radius: 20%;
+    font-size: medium;
+    font-family: fantasy;
+    transition: 100ms;
+}
+
+.reset_btn:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+    cursor: pointer;
+}
