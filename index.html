@@ -1,37 +1,44 @@
 <html>
-
-<head>
-<title>Rock Paper Scissor</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
-
-<header>
-    <h1>Rock Paper Scissor Game!</h1>
-</header>
-
-<body>
+  <head>
+    <title>WarCraft's RPS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h2>WarCraft Clone RPS</header></h2>
     <main>
-        <div class="selections">
-            <button type="buttton" class="game_btn" value="rock">☄️</button>
-            <button type="buttton" class="game_btn" value="paper">📝</button>
-            <button type="buttton" class="game_btn" value="scissor">✂️</button>
-        </div>
+        <!-- Game Introduction goes here!-->
+        <article class="introduction">
+            <p>Archer beat Knight!</p>
+            <p>Knight counter   Rogue!</p>
+            <p>Rogue anti Archer!</p>
+        </article>
 
-        <div class="game_result">
-            <div>Player<span class="scores">0</span></div>
-            <div>Computer<span class="scores">0</span></div>
-            <div class="result_winner">☄️</div>
-            <div class="result_loser">✂️</div>
-        </div>
-    </main>
+        <!-- Game button selections goes here!-->
+      <div class="weapon_selections">
+        <button type="submit" class="game_btn" style="border: 0; background: teal;"><img src="imgs/slyvannas.gif" id="archer" alt="archer" width="80"></button>
+        <button type="submit" class="game_btn" style="border: 0; background: silver;"><img src="imgs/arthas.gif" id="knight"  alt="knight" width="80"></button>
+        <button type="submit" class="game_btn" style="border: 0; background: palegreen;"><img src="imgs/illidan.gif" id="rogue" alt="rogue" width="80"></button>
+      </div>
 
-    <div class="reset">
-        <button type="button" class="reset_btn">Restart the game</button>
+      <div class="game_scores">
+        <div>Player<span class="player_scores">2</span></div>
+        <div>Computer<span class="computer_scores">3</span></div>
+      </div>
+
+      <div class="declaration_msg">
+        <div class="result_msg">Hello World</div>
     </div>
 
+    <div>
+        <img src="imgs/orc_dance.gif" alt="valkyrie" class="valkyrie_msg valk_hidden" height="100">
+    </div>
+ 
+      <div class="restart">
+        <button type="button" class="restart_btn">Restart</button>
+      </div>
+      
+    </main>
+  </body>
+  <script src="script.js"></script>
 
-
-
-</body>
 </html>

@@ -1,94 +1,131 @@
-h1 {
-    display: flex;
-    justify-content: center;
-    font-family: fantasy;
-    margin-top: 2rem;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-
 body {
-    background-image: url(https://cdnb.artstation.com/p/assets/images/images/007/382/309/large/nastya-friday-game-background-1.jpg?1505758821);
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* background-image: url(https://steamuserimages-a.akamaihd.net/ugc/158027756686645827/F09AC1BA64D1A94F71D2F14C89D5F83FACA8FACB/); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-/* game selection goes here! */
-
-.selections {
-    display: flex;
-    justify-content: center;
+header {
+  /* background: url("https://cms-assets.tutsplus.com/uploads/users/2092/posts/35181/image/gaming_1.jpg")
+    no-repeat center 0; */
+  height: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  border-bottom: 2px double goldenrod;
 }
 
-.game_btn {
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 3rem;
-    transition: 100ms;
-    padding: 2rem;
-    margin-top: 2rem;
+article {
+  /* color: white; */
 }
 
-.game_btn:hover {
-    transform: scale(1.3);
-    cursor: pointer;
+h2 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: fantasy;
+  align-items: center;
 }
 
-
-/* game scores goes here! */
-
-.game_result {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-family: cursive;
+/* need to revise for this positioning*/
+.introduction {
+  font-family: fantasy;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
-.scores {
-    font-size: 1.2rem;
-    color: #333;
-    margin-left: 0.5rem;
+/* Game buttons*/
+.weapon_selections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.result_winner {
-    margin-top: 1rem;
-    opacity: 1;
-    font-size: 2rem;
-    cursor: pointer;
+#knight:hover {
+  transform: scale(1.75);
+  cursor: pointer;
+  transition: 150ms;
 }
 
-.result_loser {
-    margin-top: 1rem;
-    opacity: 0.5;
-    font-size: 1.5rem;
-    cursor: pointer;
+#archer:hover {
+  transform: scale(1.75);
+  cursor: pointer;
+  transition: 150ms;
 }
 
-
-/* reset button goes here */
-
-.reset {
-    margin-top: 15rem;
-    display: flex;
-    justify-content: center;
+#rogue:hover {
+  transform: scale(1.75);
+  cursor: pointer;
+  transition: 150ms;
 }
 
-.reset_btn {
-    border: 5px solid goldenrod;
-    background-color: blueviolet;
-    border-radius: 20%;
-    font-size: medium;
-    font-family: fantasy;
-    transition: 100ms;
+/* Game scores*/
+.game_scores {
+  font-size: 2rem;
+  font-family: fantasy;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-.reset_btn:hover {
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    border-color: rgba(223,225,229,0);
-    cursor: pointer;
+.player_scores,
+.computer_scores {
+  font-size: 1.2rem;
+  color: #333;
+  margin-left: 0.5rem;
+}
+
+/* Game Declaration Message */
+.declaration_msg {
+  font-size: 1.5rem;
+  font-family: "KoHo", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /* color: white; */
+}
+
+/* valkryie */
+.valkyrie_msg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+}
+
+/* valk will show herself in JS function call*/
+.valk_hidden {
+  display: none;
+  margin-bottom: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* reset button*/
+.restart {
+  display: flex;
+  justify-content: center;
+}
+
+.restart_btn {
+  font-size: 1.5rem;
+  background: none;
+  border: goldenrod solid 3px;
+  border-radius: 3rem;
+  font-family: fantasy;
+  margin-bottom: 5rem;
+  position: fixed;
+  bottom: 10px;
+}
+
+.restart_btn:hover {
+  transform: scale(1.2);
+  transition: 200ms;
+  box-shadow: 0 1px 15px 0 rgba(32, 33, 36, 0.28);
 }
