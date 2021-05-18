@@ -74,7 +74,7 @@ h2 {
 .player_scores,
 .computer_scores {
   font-size: 1.2rem;
-  color: #333;
+  color: rgb(35, 190, 21);
   margin-left: 0.5rem;
 }
 
