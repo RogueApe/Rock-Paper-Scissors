@@ -1,11 +1,13 @@
 body {
-  background-image: url(https://i.pinimg.com/originals/d1/f4/48/d1f44819a3b44d412def2b20c345566e.jpg);
+  /* background-image: url(https://steamuserimages-a.akamaihd.net/ugc/158027756686645827/F09AC1BA64D1A94F71D2F14C89D5F83FACA8FACB/); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 header {
+  /* background: url("https://cms-assets.tutsplus.com/uploads/users/2092/posts/35181/image/gaming_1.jpg")
+    no-repeat center 0; */
   height: 30px;
   padding-bottom: 10px;
   position: relative;
@@ -33,28 +35,33 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 /* Game buttons*/
 .weapon_selections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 #knight:hover {
-  transform: scale(1.75);
+  transform: scale(1.25);
   cursor: pointer;
   transition: 150ms;
 }
 
 #archer:hover {
-  transform: scale(1.75);
+  transform: scale(1.25);
   cursor: pointer;
   transition: 150ms;
 }
 
 #rogue:hover {
-  transform: scale(1.75);
+  transform: scale(1.25);
   cursor: pointer;
   transition: 150ms;
 }
@@ -68,17 +75,14 @@ h2 {
   justify-items: center;
   justify-content: center;
   margin-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.player_scores {
-  font-size: 2.5rem;
-  color: rgb(35, 190, 21);
-  margin-left: 0.5rem;
-}
-
+.player_scores,
 .computer_scores {
   font-size: 2.5rem;
-  color: rgb(238, 28, 13);
+  color: rgb(14, 196, 54);
   margin-left: 0.5rem;
 }
 
@@ -115,6 +119,7 @@ h2 {
 .restart {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .restart_btn {
@@ -124,8 +129,7 @@ h2 {
   border-radius: 3rem;
   font-family: fantasy;
   margin-bottom: 5rem;
-  position: fixed;
-  bottom: 10px;
+  position: absolute;
 }
 
 .restart_btn:hover {
