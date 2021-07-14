@@ -7,7 +7,6 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Medula One", cursive;
 }
 /* GOOGLE FONTS */
 /* font-family: 'Medula One', cursive;
@@ -29,7 +28,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Tourney", cursive;
+  font-family: "Medula One", cursive;
+  letter-spacing: 0.1rem;
 
   cursor: pointer;
 }
@@ -214,8 +214,10 @@ footer {
 }
 
 footer h4 {
-  font-size: 3rem;
-  letter-spacing: 0.15rem;
+  font-family: "Medula One", cursive;
+
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
 }
 
 @media screen and (max-width: 760px) {
